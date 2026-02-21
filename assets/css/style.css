@@ -1,0 +1,17 @@
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-poppins { font-family: 'Poppins', sans-serif; }
+
+/* Scroll Animations */
+.hidden-on-load {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-200 { transition-delay: 200ms; }
+.delay-400 { transition-delay: 400ms; }

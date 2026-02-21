@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chathu's Homemade Cakes | Our Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-stone-50 text-stone-800 font-poppins">
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-playfair text-xl lg:text-2xl font-bold text-rose-600">Chathu's
+                        Homemade Cakes</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-stone-600 hover:text-rose-500 font-medium transition">මුල්
+                        පිටුව</a>
+                    <a href="menu.html"
+                        class="text-stone-900 border-b-2 border-rose-500 pb-1 font-medium transition">අපේ මෙනුව</a>
+                    <a href="about.html" class="text-stone-600 hover:text-rose-500 font-medium transition">අප ගැන</a>
+                    <a href="contact.html"
+                        class="bg-rose-500 text-white px-5 py-2 rounded-full hover:bg-rose-600 transition shadow-md font-medium">දැන්
+                        ඇණවුම් කරන්න</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-btn text-stone-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden fixed bg-white w-full h-full z-40 pt-20 px-6 drop-shadow-2xl">
+        <div class="flex flex-col space-y-4 text-center text-xl mt-10">
+            <a href="index.html" class="text-stone-600 hover:text-rose-500 py-3 font-medium transition">මුල් පිටුව</a>
+            <a href="menu.html" class="text-rose-600 font-bold py-3">අපේ මෙනුව</a>
+            <a href="about.html" class="text-stone-600 hover:text-rose-500 py-3 font-medium transition">අප ගැන</a>
+            <a href="contact.html"
+                class="bg-rose-500 text-white w-3/4 mx-auto rounded-full font-bold py-3 shadow-lg hover:bg-rose-600 transition">දැන්
+                ඇණවුම් කරන්න</a>
+        </div>
+    </div>
+
+    <!-- Menu Header -->
+    <div class="pt-32 pb-16 bg-rose-50 text-center relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmU0ZTYiLz48L3N2Zz4=')] opacity-50">
+        </div>
+        <div class="relative z-10 hidden-on-load">
+            <h1 class="font-playfair text-5xl font-bold text-stone-900 mb-4">අපේ මෙනුව</h1>
+            <p class="text-stone-600 max-w-2xl mx-auto text-lg px-4">පිරිසිදු අමුද්‍රව්‍ය වලින් සහ ආදරයෙන් සාදන ලද අපගේ
+                රසවත් කේක් වට්ටෝරු බලන්න.</p>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Item 1 -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)] hover:shadow-2xl transition duration-500 hidden-on-load group border border-stone-100">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="assets/images/hero_cake.png" alt="Chocolate Cake 1KG"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-playfair text-2xl font-bold text-stone-900">චොකලට් කේක් (Chocolate Cake)</h3>
+                        <span class="text-rose-600 font-bold text-lg">රු. 4500</span>
+                    </div>
+                    <p class="text-stone-500 mb-6 line-clamp-2">නැවුම් චොකලට් සහ උසස්ම තත්ත්වයේ අමුද්‍රව්‍ය වලින් සාදන
+                        ලද රසවත් චොකලට් කේක්.</p>
+                    <a href="contact.html?item=chocolate_cake"
+                        class="inline-flex items-center justify-center w-full bg-rose-50 text-rose-600 font-bold py-3 rounded-xl hover:bg-rose-500 hover:text-white transition duration-300">
+                        ඇණවුම් කරන්න
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)] hover:shadow-2xl transition duration-500 hidden-on-load delay-200 group border border-stone-100">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="assets/images/icing_cake.png" alt="Icing Cake 1KG"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-playfair text-2xl font-bold text-stone-900">අයිසිං කේක් (Icing Cake)</h3>
+                        <span class="text-rose-600 font-bold text-lg">රු. 3000</span>
+                    </div>
+                    <p class="text-stone-500 mb-6 line-clamp-2">උපන්දින හා ඔබගේ ඕනෑම සුබ මොහොතක් සඳහා ලස්සනට සරසන ලද
+                        අයිසිං කේක්.</p>
+                    <a href="contact.html?item=icing_cake"
+                        class="inline-flex items-center justify-center w-full bg-rose-50 text-rose-600 font-bold py-3 rounded-xl hover:bg-rose-500 hover:text-white transition duration-300">
+                        ඇණවුම් කරන්න
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)] hover:shadow-2xl transition duration-500 hidden-on-load delay-400 group border border-stone-100">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="assets/images/cupcakes.png" alt="Cup Cake"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-playfair text-2xl font-bold text-stone-900">කප් කේක් (Cup Cake)</h3>
+                        <span class="text-rose-600 font-bold text-lg">රු. 130</span>
+                    </div>
+                    <p class="text-stone-500 mb-6 line-clamp-2">මෘදු හා රසවත්, අළුතින් බේක් කරන ලද කප් කේක්.</p>
+                    <a href="contact.html?item=cup_cake"
+                        class="inline-flex items-center justify-center w-full bg-rose-50 text-rose-600 font-bold py-3 rounded-xl hover:bg-rose-500 hover:text-white transition duration-300">
+                        ඇණවුම් කරන්න
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)] hover:shadow-2xl transition duration-500 hidden-on-load group border border-stone-100">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="assets/images/sponge_cake.png" alt="Spanchi"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-playfair text-2xl font-bold text-stone-900">ස්පන්චි (Spanchi)</h3>
+                        <span class="text-rose-600 font-bold text-lg">රු. 80</span>
+                    </div>
+                    <p class="text-stone-500 mb-6 line-clamp-2">ඉතාමත් සැහැල්ලු හා සුමුදු, රසවත් ස්පන්චි කේක්.</p>
+                    <a href="contact.html?item=spanchi"
+                        class="inline-flex items-center justify-center w-full bg-rose-50 text-rose-600 font-bold py-3 rounded-xl hover:bg-rose-500 hover:text-white transition duration-300">
+                        ඇණවුම් කරන්න
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)] hover:shadow-2xl transition duration-500 hidden-on-load delay-200 group border border-stone-100">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="assets/images/butter_cake.png" alt="Butter Cake 1KG"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-playfair text-2xl font-bold text-stone-900">බටර් කේක් (Butter Cake)</h3>
+                        <span class="text-rose-600 font-bold text-lg">රු. 1400</span>
+                    </div>
+                    <p class="text-stone-500 mb-6 line-clamp-2">නියම බටර් වලින් සාදන ලද රසවත් බටර් කේක්, සෑම කටක්ම
+                        ප්‍රණීතයි.</p>
+                    <a href="contact.html?item=butter_cake"
+                        class="inline-flex items-center justify-center w-full bg-rose-50 text-rose-600 font-bold py-3 rounded-xl hover:bg-rose-500 hover:text-white transition duration-300">
+                        ඇණවුම් කරන්න
+                    </a>
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)] hover:shadow-2xl transition duration-500 hidden-on-load delay-300 group border border-stone-100">
+                <div class="h-72 overflow-hidden relative">
+                    <img src="assets/images/wedding_cake_new.jpg" alt="Wedding Cake"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-playfair text-2xl font-bold text-stone-900">මංගල කේක් (Wedding Cake)</h3>
+                    </div>
+                    <p class="text-stone-500 mb-6 line-clamp-2">ඔබගේ විශේෂ දිනයට ගැලපෙන අලංකාර සහ රසවත් මංගල කේක්.</p>
+                    <a href="contact.html?item=wedding_cake"
+                        class="inline-flex items-center justify-center w-full bg-rose-50 text-rose-600 font-bold py-3 rounded-xl hover:bg-rose-500 hover:text-white transition duration-300">
+                        ඇණවුම් කරන්න
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-12 px-4 text-center mt-10">
+        <h3 class="font-playfair text-2xl font-bold text-white mb-2">Chathu's Homemade Cakes</h3>
+        <p class="text-sm text-stone-500 mb-6">ශ්‍රී ලංකාවේ ආදරයෙන් සාදන ලදී ❤️</p>
+        <p class="text-sm text-stone-600">&copy; 2024 Chathu's Homemade Cakes. සියලුම හිමිකම් ඇවිරිණි.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
